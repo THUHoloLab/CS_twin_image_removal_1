@@ -72,7 +72,7 @@ AT = @(g) MyAdjointOperatorPropagation(g,E,nx,ny,nz,Phase);  % backward propagat
 tau = 0.005; 
 piter = 4;
 tolA = 1e-6;
-iterations = 50;
+iterations = 200;
 
 Psi = @(f,th) MyTVpsi(f,th,0.05,piter,Nx,Ny,Nz);
 Phi = @(f) MyTVphi(f,Nx,Ny,Nz);
